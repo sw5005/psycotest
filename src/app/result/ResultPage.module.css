@@ -1,0 +1,111 @@
+/* ResultPage.module.css */
+.container {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.homeButton {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background: #0070f3;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.homeButton:hover {
+  background: #0059c9;
+}
+
+/* 기존 스타일에 추가 */
+.section {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+.sectionContent {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+.strengthList,
+.weaknessList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.strengthItem,
+.weaknessItem {
+  padding: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+.strengthItem::before {
+  content: '✨ ';
+}
+.weaknessItem::before {
+  content: ' ';
+}
+
+/* 다크모드 스타일 */
+[data-theme='dark'] .container {
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .title {
+  color: #fff;
+}
+
+[data-theme='dark'] .description {
+  color: #ccc;
+}
+
+[data-theme='dark'] .sectionTitle {
+  color: #fff;
+}
+
+[data-theme='dark'] .sectionContent {
+  color: #ccc;
+}
+
+[data-theme='dark'] .strengthItem,
+[data-theme='dark'] .weaknessItem {
+  color: #ccc;
+}
+
+[data-theme='dark'] .homeButton {
+  background: #0070f3;
+  color: #fff;
+}
+
+[data-theme='dark'] .homeButton:hover {
+  background: #0059c9;
+}
